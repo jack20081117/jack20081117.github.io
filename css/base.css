@@ -84,6 +84,10 @@ li.dropdown {
     display:block;
 }
 /*顶部导航栏,下拉列表样式*/
+form, fieldset {
+    display:block;
+}
+/*表单样式*/
 .button1 {
     border:none;
     border-radius:5px;
