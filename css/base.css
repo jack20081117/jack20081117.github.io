@@ -147,7 +147,7 @@ abbr,acronym {
     letter-spacing:0.1em;
 }
 :link,:visited {
-    text-decoration:underline;
+    text-decoration:none;
 }
 :focus {
     outline:thin dotted invert;
