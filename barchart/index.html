@@ -7,18 +7,31 @@
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <link rel="stylesheet" href="https://jack20081117.github.io/css/base.css" />
     <link rel="stylesheet" href="https://jack20081117.github.io/css/awesome.css" />
+    <py-env>
+      - numpy
+      - matplotlib
+      - paths:
+        - /barchart.py
+    </py-env>
 </head>
 <body>
 <!-- 导航栏 -->
 <ul>
     <li><a href="https://jack20081117.github.io" style="font-size:20px;" id="Home">主页-Jack's web app</a></li>
+    <li><a href="https://jack20081117.github.io/barchart" id="Barchart">Barchart</a></li>
 </ul>
 
 <!-- 内容 -->
 <div class="row">
     <div class="leftcolumn">
         <h2>Barchart</h2>
-        
+        <div id="bar"></div>
+        <py-script>
+            from barchart import paint
+            num=input("请输入您想了解的学号:")
+            fig=paint(num)
+            pyscript.write("bar",fig)
+        </py-script>
     </div>
     <div class="rightcolumn">
         <h3>About me</h3>
