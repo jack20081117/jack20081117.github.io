@@ -11,7 +11,7 @@
       - numpy
       - matplotlib
       - paths:
-        - /barchart.py
+        - ./barchart.py
     </py-env>
 </head>
 <body>
@@ -27,9 +27,9 @@
         <h2>Barchart</h2>
         <div id="bar"></div>
         <py-script>
-            from barchart import paint
+            import barchart
             num=input("请输入您想了解的学号:")
-            fig=paint(num)
+            fig=barchart.paint(num)
             pyscript.write("bar",fig)
         </py-script>
     </div>
